@@ -39,16 +39,13 @@ function getArticles() {
         var detail = ''
         standing.table.forEach(result => {
           detail += `<tr>
-            <td>${result.position}</td>
+            <td class='center'>${result.position}</td>
             <td>${result.team.name}</td>
-            <td>${result.playedGames}</td>
-            <td>${result.won}</td>
-            <td>${result.draw}</td>
-            <td>${result.lost}</td>
-            <td>${result.goalsFor}</td>
-            <td>${result.goalsAgainst}</td>
-            <td>${result.goalDifference}</td>
-            <td>${result.points}</td>
+            <td class='center'>${result.playedGames}</td>
+            <td class='center'>${result.won}</td>
+            <td class='center'>${result.draw}</td>
+            <td class='center'>${result.lost}</td>
+            <td class='center'>${result.points}</td>
           </tr>`
         });
 
@@ -60,16 +57,13 @@ function getArticles() {
                   <table class="responsive-table highlight">
                     <thead>
                       <tr>
-                        <th>Position</th>
+                        <th class='center'>Position</th>
                         <th>Team</th>
-                        <th>Played</th>
-                        <th>Won</th>
-                        <th>Draw</th>
-                        <th>Lost</th>
-                        <th>GF</th>
-                        <th>GA</th>
-                        <th>GD</th>
-                        <th>Points</th>
+                        <th class='center'>Played</th>
+                        <th class='center'>Won</th>
+                        <th class='center'>Draw</th>
+                        <th class='center'>Lost</th>
+                        <th class='center'>Points</th>
                       </tr>
                     </thead>
                     <tbody>` + detail + `</tbody>
